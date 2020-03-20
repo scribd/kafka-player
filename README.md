@@ -51,7 +51,7 @@ The `example` folder of this repository contains a data file called `example.jso
 docker-compose up -d
 
 # play the example data file onto the local kafka
-./bin/play-example.sh
+./example/play-example.sh
 ```
 
 Once the player starts, run `kafkacat` in another terminal to verify your messages are coming in.
