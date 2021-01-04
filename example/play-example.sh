@@ -2,15 +2,16 @@
 
 #
 # Runs the `kafka-player` application against a local Kafka.
+# Run `sbt assembly` from the root of the project before running this script.
 #
 
 set -eu
 
 scriptpath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-jar_file=$scriptpath/../target/scala-2.12/kafka-player.jar
+jar_file=$scriptpath/../target/scala-2.12/kafka-player-0.1.0.jar
 message_file=$scriptpath/example.json
-num_messages=10000
+num_messages=10
 messages_per_second=0.5
 topic=example
 broker_string=localhost:9092
